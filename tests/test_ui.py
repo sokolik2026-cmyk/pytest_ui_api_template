@@ -1,8 +1,10 @@
+from time import sleep
+
 import pytest
 import allure
-from pytest_ui_api_template.page.AuthPage import AuthPage
-from pytest_ui_api_template.page.HomePage import HomePage
-from pytest_ui_api_template.page.SearchPage import SearchPage
+from pytest_ui_api_template.pages.AuthPage import AuthPage
+from pytest_ui_api_template.pages.HomePage import HomePage
+from pytest_ui_api_template.pages.SearchPage import SearchPage
 
 
 @pytest.mark.ui

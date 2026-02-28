@@ -166,5 +166,9 @@ class HomePage:
                 )
             )
         )
-        button_checkout.click()
+        self._driver.execute_script("arguments[0]."
+                                    "scrollIntoView({block: 'center'});",
+                                    button_checkout)
+        self._driver.execute_script("arguments[0].click();",
+                                    button_checkout)
 
